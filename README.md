@@ -12,7 +12,7 @@ but constants in the file allows to customize to use any other characters/icons 
 It currently shows:
 * Battery Life (currently mac only)
     * indicator of connected or not
-    * different colors for 0%-25%, 25%-50%, 50%-75%, 75%-100%
+    * different icons/colors for 0%-25%, 25%-50%, 50%-75%, 75%-100%
 * Date and time
 * Current directory
 * Git status
@@ -20,6 +20,7 @@ It currently shows:
     * clean/dirty directory
     * number of changed/added/deleted/modified files
     * number of stashes
+    * number of commits ahead/behind
 * Username
 
 ![alt text](images/image1.png "iTerm2 screenshot")
