@@ -28,3 +28,5 @@ iTerm2 screenshot
 
 ![alt text](images/image2.png "iTerm2 font settings")
 iTerm2 font settings
+
+Another nice setup: [https://gist.github.com/kevin-smets/8568070]
