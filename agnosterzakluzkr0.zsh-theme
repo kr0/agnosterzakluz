@@ -44,8 +44,8 @@ CURRENT_BG='NONE'
 
   CALENDAR_ICON=$'\uf073'
   HOUR_ICON=$'\uf017'
-  # PROMPT_ICON=$'\uf1b0' # paw
-  PROMPT_ICON=$'\ue7a1' # owl 
+ #  PROMPT_ICON=$'\uf1b0' # paw
+   PROMPT_ICON=$'\ue7a1' # owl 
 
   CONNECTED_ICON=$'\uf1e6'
   BATTERY_00_ICON=$'\uf244'
@@ -85,7 +85,7 @@ CURRENT_BG='NONE'
   DATE_COLOR=white
 
   DIR_BG_COLOR=yellow
-  DIR_COLOR=blue
+  DIR_COLOR=white
 
   GIT_ICON_COLOR=black
   GIT_CLEAN_BG_COLOR=white
@@ -367,7 +367,7 @@ build_prompt() {
   # echo -n "\n"
   prompt_status
   prompt_context
-  prompt_battery
+  # prompt_battery
   prompt_time
   # prompt_virtualenv
   prompt_dir
