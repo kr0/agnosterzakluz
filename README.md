@@ -1,6 +1,6 @@
-# agnosterzakluz
+# agnosterzakluzkr0
 
-AgnosterZakLuz is a [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) shell theme based on the 
+AgnosterZakLuzkr0 is a [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) shell theme based on the 
 [Powerline Vim plugin](https://github.com/Lokaltog/vim-powerline), 
 [Agnoster Theme](https://gist.github.com/agnoster/3712874),
 [AgnosterZak Theme](https://github.com/zakaziko99/agnosterzak-ohmyzsh-theme) and
