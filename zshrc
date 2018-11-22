@@ -1,35 +1,29 @@
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/lmunda/.oh-my-zsh
+export ZSH="/Users/kr0/.oh-my-zsh"
 
-#setopt xtrace
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="agnoster"
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-#ZSH_THEME="cloud"
-#ZSH_THEME="agnosterzak"
-#ZSH_THEME="agnoster"
-#ZSH_THEME="agnosterLuz"
-#ZSH_THEME="agnosterzak_original"
-
-#ZSH_THEME="powerlevel9k/powerlevel9k"
-
-ZSH_THEME="agnosterzakluz"
-#ZSH_THEME="ohmygit"
-
-#ZSH_THEME="bullet-train"
-
-#ZSH_THEME="sheeptheme"
-#ZSH_THEME="candy"
-#ZSH_THEME="robbyrussell"
 #source ~/.oh-my-git/prompt.sh
+
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
@@ -57,25 +51,29 @@ ZSH_THEME="agnosterzakluz"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Which plugins would you like to load?
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo wd osx)
+plugins=(
+  git sudo wd osx
+)
+
 
 # User configuration
-
-export PATH="/usr/local/Cellar:Users/lmunda/.sdkman/groovy/current/bin:/usr/local/php5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/lmunda/Library/Android/sdk/tools:/Users/lmunda/Library/Android/sdk/platform-tools"
-# export MANPATH="/usr/local/man:$MANPATH"
-export LC_CTYPE="en_US.UTF-8"
-
 source $ZSH/oh-my-zsh.sh
+
+# export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -91,7 +89,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -102,59 +100,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias gpr="git pull --rebase"
-
-alias his="history | grep"
-alias ez="vim ~/.zshrc"
-alias sz="source ~/.zshrc"
-alias et="atom ~/.oh-my-zsh/themes/agnosterzakluz.zsh-theme"
-
-alias glol2="git log --graph --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:'''%Cred%h%Creset -%C(yellow)%d %Cgreen(%cd)%C(bold blue) [%an]%Creset %s %Creset'"
-
-alias gph="git push heroku master"
-alias tree="tree -FC"
-
-alias rbc="rubocop -aDE"
-
-alias theme="atom ~/.oh-my-zsh/themes/agnosterzakluz.zsh-theme"
-
-alias longpressoff="defaults write -g ApplePressAndHoldEnabled -bool false"
-alias longpresson="defaults write -g ApplePressAndHoldEnabled -bool true"
-
-alias configenergia="sudo pmset -g"
-alias standbyoff="sudo pmset standby 0"
-
-export SDKMAN_DIR="/Users/lmunda/.sdkman"
-[[ -s "/Users/lmunda/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/lmunda/.sdkman/bin/sdkman-init.sh"
 
 
-#eval "$(rbenv init -)"
-
-#source "$HOME/.antigen/antigen.zsh"
-#antigen-use oh-my-zsh
-#antigen-bundle luzma87/oh-my-git
-#antigen-bundle jderusse/oh-my-git
-#antigen theme arialdomartini/oh-my-git-themes oppa-lana-style
-#antigen theme luzma87/oh-my-git-themes oppa-lana-style
-#antigen theme arialdomartini/oh-my-git-themes arialdo-pathinline
-#antigen theme arialdomartini/oh-my-git-themes arialdo-granzestyle
-#antigen-apply
-
-
-BULLETTRAIN_GIT_PREFIX=""
-BULLETTRAIN_DIR_EXTENDED=2
-BULLETTRAIN_GIT_MODIFIED=" %F{blue}✹%F{black}"
-
-export STAGE=local
-
-export SKIP_DM=true
-
-export SNAP_DB_PG_JDBC_URL="jdbc:postgresql://localhost:5432/twparking_integration?user=postgres&password=postgres"
-export LC_CTYPE="en_US.UTF-8"
-
-export NVM_DIR="$HOME/.nvm"
-  . "$(brew --prefix nvm)/nvm.sh"
-
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# Git Stuff
+git config --global user.name "kr0"
+git config --global user.email kr0@github.com
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.lo 'log --oneline'
+git config --global alias.st status
