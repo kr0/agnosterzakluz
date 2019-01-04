@@ -1,19 +1,23 @@
 #!/usr/bin/env bash
+echo "Install iterm2"
 brew cask install iterm2;
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
-cp zshrc ~/.zshrc;
 
-echo "Installing Fonts"
-cp /fonts/* ~/Library/Fonts;
+echo "Install fonts"
+brew tap homebrew/cask-fonts
+while read line; do brew cask install $line; done < fonts;
 
-echo "Installing oh-my-zsh plugins";
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-brew install zsh-syntax-highlighting;
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh >> ~/.zshrc
+echo "Install bash_it"
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+~/.bash_it/install.sh --interactive
 
-echo "Copying config files to the places"
+echo "Adding config to .ssh so that keys are adding automagically"
 cp config ~/.ssh/config
 
+echo "Install fancy vim"
+sh <(curl https://j.mp/spf13-vim3 -L)
 
-source zshrc;
+echo "Remember to import styles on iterm from iterm2/"
+
+cp ./bash_profile ~/.bash_profile
+source ~/.bash_profile;
 
