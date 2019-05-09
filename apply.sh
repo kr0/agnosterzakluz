@@ -17,6 +17,7 @@ echo "Install fancy vim"
 sh <(curl https://j.mp/spf13-vim3 -L)
 
 echo "Remember to import styles on iterm from iterm2/"
+echo "App Store --> Spectacle, Amphetamine"
 
 cp ./bash_profile ~/.bash_profile
 source ~/.bash_profile;
