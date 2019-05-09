@@ -20,4 +20,4 @@ echo "Remember to import styles on iterm from iterm2/"
 
 cp ./bash_profile ~/.bash_profile
 source ~/.bash_profile;
-
+cp ./inputrc ~/.inputrc
